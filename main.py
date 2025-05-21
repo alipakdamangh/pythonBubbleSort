@@ -1,17 +1,18 @@
-def bubble_sort(arr):
-    n = len(arr)
+def bubble_sort(list_numbers):
+    n = len(list_numbers)
     for i in range(n):
         for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            if list_numbers[j] > list_numbers[j + 1]:
+                list_numbers[j], list_numbers[j + 1] = list_numbers[j + 1], list_numbers[j]
 
-numbers = [64, 34, 25, 12, 22, 11, 90]
-print("Original array:", numbers)
+
+numbers = [64, 34, 25, 12, 22, 11, 128]
+print("Original list:", numbers)
 
 bubble_sort(numbers)
-
-print("Sorted array:", numbers)
+print("Sorted list:", numbers)
 
 
 #this is the test function
 def foo(): 
+    pass
